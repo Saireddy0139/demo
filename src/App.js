@@ -6,17 +6,29 @@ import { BrowserRouter as Router,
    Route,
    Navigate
    } from 'react-router-dom'; 
-
+   import "@aws-amplify/ui-react/styles.css";
+import {
+withAuthenticator,
+Button,
+Heading,
+Image,
+View,
+Card,
+} from "@aws-amplify/ui-react"
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
  import ResetPassword from './Components/ResetPassword';
 
 
  
-function App() {
+function App({ signOut }) {
   return (
       <>
-          <Router>
+      <View className="App">
+        <Card>
+          {/* <Image src={logo} className="App-logo" alt="logo"/> */}
+          
+          { <Router>
               <Routes>
                   <Route
                       exact
@@ -34,9 +46,13 @@ function App() {
                       element={<Navigate to="/" />}
                   />
               </Routes>
-          </Router>
-      </>
+          </Router> }
+          <Heading level={1}>We now have Auth!</Heading>
+          </Card>
+          <Button onClick={signOut}>Logout</Button>
+          </View>
+          </>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
