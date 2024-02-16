@@ -1,0 +1,91 @@
+.SignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+      rgb(255 255 255 / 0%),
+      rgba(255, 255, 255, 0)
+      )
+        ,url("https://img.freepik.com/free-vector/sky-with-anime-fluffy-curve-shaped-clouds-cartoon-vector-illustration-sunny-summer-day-cloudy-heaven-background-with-blue-pink-gradient-color-panoramic-air-landscape-clear-weather_107791-24304.jpg?w=1060&t=st=1708011466~exp=1708012066~hmac=3bb92cc55212e27ae80dce976e71a91f2c19af6575e31f7521e0d5daac7caafb");
+    background-size: cover;
+    background-position: center;  
+    
+  }
+  
+  form{
+      background-color: rgb(255, 255, 255);
+      padding: 0px 60px;
+      border-radius: 10px;
+  }
+  
+  h1{
+      color: rgb(77, 1, 77);
+      text-align: center;
+  }
+  
+  button{
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border: none;
+      background-color: rebeccapurple;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 18px;
+      
+  }
+
+
+
+.SignUpper {
+    display: flex;
+     color: red;  
+    flex-direction: column;
+    width: 300px;
+    padding: 1%;
+}
+
+input{
+    padding: 15px;
+    /* color: black; */
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+label{
+    font-size: 13px;
+    font-weight: bold;
+   color: black;
+   padding-inline-start: 0%;
+   
+}
+.redirect {
+     color: rgb(23, 23, 53);
+     cursor: pointer;
+     margin-bottom: 30px;
+    
+}
+
+ span{
+    font-size: 13px;
+    padding: 0px;
+    padding-bottom:3%;
+    color: rgb(255, 0, 0); 
+   
+}
+/* 
+.input:invalid[focused="true"]{
+    border: 5px solid red;
+}
+
+.input:invalid[focused="true"] ~ span{
+    color: red;
+    display: block;
+} */
