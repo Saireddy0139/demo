@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router,
@@ -6,29 +6,30 @@ import { BrowserRouter as Router,
    Route,
    Navigate
    } from 'react-router-dom'; 
-   import "@aws-amplify/ui-react/styles.css";
-import {
-withAuthenticator,
-Button,
-Heading,
-Image,
-View,
-Card,
-} from "@aws-amplify/ui-react"
+//    import "@aws-amplify/ui-react/styles.css";
+// import {
+// withAuthenticator,
+// Button,
+// Heading,
+// Image,
+// View,
+// Card,
+// } from "@aws-amplify/ui-react"
 import SignUp from './Components/SignUp';
 import Login from './Components/Login';
  import ResetPassword from './Components/ResetPassword';
 
 
  
-function App({ signOut }) {
+// function App({ signOut }) {
+  function App() {
   return (
       <>
-      <View className="App">
-        <Card>
-          {/* <Image src={logo} className="App-logo" alt="logo"/> */}
+      {/* <View className="App">
+        <Card> */}
+         
           
-          { <Router>
+          <Router>
               <Routes>
                   <Route
                       exact
@@ -46,13 +47,13 @@ function App({ signOut }) {
                       element={<Navigate to="/" />}
                   />
               </Routes>
-          </Router> }
-          <Heading level={1}>We now have Auth!</Heading>
+          </Router>
+          {/* <Heading level={1}></Heading>
           </Card>
-          <Button onClick={signOut}>Logout</Button>
-          </View>
+          {/* <Button onClick={signOut}>Logout</Button> */}
+          {/* </View>  */}
           </>
   );
 }
-
-export default withAuthenticator(App);
+export default App;
+// export default withAuthenticator(App);
