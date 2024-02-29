@@ -14,10 +14,11 @@ Heading,
 Image,
 View,
 Card,
+useAuthenticator,
 } from "@aws-amplify/ui-react"
 // import SignUp from './Components/SignUp';
 // import Login from './Components/Login';
-//  import ResetPassword from './Components/ResetPassword';
+  //import ResetPassword from './Components/ResetPassword';
 
 
  
@@ -99,7 +100,7 @@ const components = {
         );
       },
       Footer() {
-        const { toForgotPassword } = Authenticator();
+        const { toForgotPassword } = useAuthenticator();
   
         return (
           <View textAlign="center">
@@ -130,7 +131,7 @@ const components = {
         );
       },
       Footer() {
-        const { toSignIn } = Authenticator();
+        const { toSignIn } = useAuthenticator();
   
         return (
           <View textAlign="center">
